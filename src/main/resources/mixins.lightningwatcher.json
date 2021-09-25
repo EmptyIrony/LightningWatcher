@@ -5,7 +5,7 @@
   "refmap": "mixins.lightningwatcher.refmap.json",
   "target": "@env(DEFAULT)",
   "compatibilityLevel": "JAVA_8",
-  "client": [
-    "NetHandlerPlayClientMixin"
+  "mixins": [
+    "EntityLightningBoltMixin"
   ]
 }
