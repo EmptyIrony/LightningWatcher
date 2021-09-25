@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "minVersion": "0.6",
+  "package": "me.cunzai.mod.mixins",
+  "refmap": "mixins.lightningwatcher.refmap.json",
+  "target": "@env(DEFAULT)",
+  "compatibilityLevel": "JAVA_8",
+  "client": [
+    "NetHandlerPlayClientMixin"
+  ]
+}
