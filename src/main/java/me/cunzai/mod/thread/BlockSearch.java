@@ -1,5 +1,6 @@
 package me.cunzai.mod.thread;
 
+import me.cunzai.mod.LightningWatcher;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.Minecraft;
@@ -17,6 +18,10 @@ public class BlockSearch implements Runnable{
 
     @Override
     public void run() {
+        if (!LightningWatcher.instance.xray) {
+            return;
+        }
+
         Minecraft minecraft = Minecraft.getMinecraft();
         if (minecraft == null) {
             return;
